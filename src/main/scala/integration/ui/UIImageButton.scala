@@ -5,8 +5,7 @@ import java.awt.image.BufferedImage
 
 class UIImageButton(x: Float,  y: Float,  width: Int,  height: Int,images: Array[BufferedImage],clicker: ClickListener) extends UIObject(x, y, width, height) {
 
-  override def update(): Unit = {
-  }
+  override def update(): Unit = {}
 
   def render(g: Graphics): Unit = {
     if (hovering) g.drawImage(images(1), x.asInstanceOf[Int], y.asInstanceOf[Int], width, height, null)
@@ -16,4 +15,5 @@ class UIImageButton(x: Float,  y: Float,  width: Int,  height: Int,images: Array
   override def onClick(): Unit = {
     clicker.onClick
   }
+
 }

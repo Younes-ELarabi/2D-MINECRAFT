@@ -2,10 +2,10 @@ package integration.craft
 
 import java.awt.Graphics
 import java.awt.event.KeyEvent
-
 import integration.graphics.Assets
 import integration.items.Item
 import integration.launcher.Handler
+import integration.ui.{ClickListener, UIImageButton, UIManager}
 
 class Craft {
 
@@ -17,10 +17,18 @@ class Craft {
   // Display
   private val craftX :Int = 192
   private val craftY :Int = 48
-
+  // UI
+  var uiManager :UIManager = _
   def this(handler :Handler){
     this()
     this.handler = handler
+    this.uiManager = new UIManager(this.handler)
+    this.handler.getMouseManager.setUIManager(uiManager)
+    uiManager.addObject(new UIImageButton(craftX, craftY, 64, 64, Assets.btn_start, new ClickListener() {
+      def onClick(): Unit = {
+        println("I clicked ")
+      }
+    }))
     init
     // for test
     insertItem(0)
@@ -84,13 +92,16 @@ class Craft {
       if(craftItem != null){
         g.drawImage(craftItem.getTexture,craftX + 351 ,craftY + 104,150,148,null)
       }
+      uiManager.render(g)
     }
   }
 
   def update :Unit = {
     if (handler.getKeyManager.keyJustPressed(KeyEvent.VK_C)) {
       active = !active
+      uiManager.update
     }
+
   }
 
 }

@@ -64,6 +64,5 @@ class UIManager
   def setObjects(objects: util.ArrayList[UIObject]): Unit = {
     this.objects = objects
   }
-
-
+  
 }

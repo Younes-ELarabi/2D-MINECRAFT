@@ -53,8 +53,8 @@ class Game extends Runnable{
 
   private def init(): Unit = {
     // audio
-    clip.open(audioIn)
-    clip.start
+    // clip.open(audioIn)
+    // clip.start
     // init assets
     Assets.init();
     //set display
