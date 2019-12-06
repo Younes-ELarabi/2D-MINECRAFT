@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BspLocalSettings">
+    <option name="projectSyncType">
+      <map>
+        <entry key="$PROJECT_DIR$/../reminecraft" value="PREVIEW" />
+      </map>
+    </option>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9427b9ea-150e-4496-a9b8-c055d7c0966a" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="193" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Scala Class" />
+        <option value="Scala Object" />
+        <option value="JUnit5 Test Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1TjwQJFU0CnX18TlhAtSeFktbxu" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="integration.creatures.Creature" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/img/craft" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.3675" />
+    <property name="project.structure.side.proportion" value="0.33103448" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="integration.creatures" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="integration.inventory" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="integration.creatures.Creature" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\desca\dev\myOwnBranchOfMinecraft\img\craft" />
+      <recent name="C:\Users\desca\dev\myOwnBranchOfMinecraft" />
+      <recent name="C:\Users\desca\dev\myOwnBranchOfMinecraft\src\main\scala\integration\ProceduralMapGeneration" />
+      <recent name="C:\Users\desca\dev\myOwnBranchOfMinecraft\src\main\scala" />
+      <recent name="C:\Users\desca\dev\myOwnBranchOfMinecraft\resources\textures" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Launcher">
+    <configuration name="Launcher" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="integration.launcher.Launcher" />
+      <module name="myOwnBranchOfMinecraft" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="integration.launcher.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="integration.creatures.Test" />
+      <module name="myOwnBranchOfMinecraft" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="integration.creatures.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Launcher" />
+        <item itemvalue="Application.Test" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SbtLocalSettings">
+    <option name="availableProjects">
+      <map>
+        <entry>
+          <key>
+            <ExternalProjectPojo>
+              <option name="name" value="myOwnBranchOfMinecraft" />
+              <option name="path" value="$PROJECT_DIR$" />
+            </ExternalProjectPojo>
+          </key>
+          <value>
+            <list>
+              <ExternalProjectPojo>
+                <option name="name" value="myownbranchofminecraft [file:/C:/Users/desca/dev/myOwnBranchOfMinecraft/]" />
+                <option name="path" value="$PROJECT_DIR$" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="myOwnBranchOfMinecraft-build" />
+                <option name="path" value="$PROJECT_DIR$/project" />
+              </ExternalProjectPojo>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="modificationStamps">
+      <map>
+        <entry key="$PROJECT_DIR$" value="3147973589687" />
+        <entry key="$PROJECT_DIR$/build.sbt" value="772518100" />
+        <entry key="$PROJECT_DIR$/project/build.properties" value="3724303870" />
+      </map>
+    </option>
+    <option name="projectSyncType">
+      <map>
+        <entry key="$PROJECT_DIR$/../reminecraft" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../reminecraft-dev" value="PREVIEW" />
+      </map>
+    </option>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9427b9ea-150e-4496-a9b8-c055d7c0966a" name="Default Changelist" comment="" />
+      <created>1573986794827</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1573986794827</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2530" y="224" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1575583754399">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2530" y="224" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/62.0.1474.864/1920.0.1920.1040@1920.0.1920.1040" timestamp="1575583754399" />
+    <state x="530" y="186" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/62.0.1474.864/1920.0.1920.1040@62.0.1474.864" timestamp="1575414232575" />
+    <state x="530" y="186" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/62.0.1474.864@62.0.1474.864" timestamp="1575416057442" />
+    <state x="254" y="86" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1575404269538">
+      <screen x="62" y="0" width="1474" height="864" />
+    </state>
+    <state x="254" y="86" key="#com.intellij.execution.impl.EditConfigurationsDialog/62.0.1474.864@62.0.1474.864" timestamp="1575404269538" />
+    <state x="614" y="346" key="#com.intellij.framework.addSupport.AddSupportForSingleFrameworkDialog" timestamp="1575223738336">
+      <screen x="62" y="0" width="1474" height="864" />
+    </state>
+    <state x="614" y="346" key="#com.intellij.framework.addSupport.AddSupportForSingleFrameworkDialog/62.0.1474.864@62.0.1474.864" timestamp="1575223738336" />
+    <state x="605" y="129" key="#com.intellij.ide.util.MemberChooser" timestamp="1575414292221">
+      <screen x="62" y="0" width="1474" height="864" />
+    </state>
+    <state x="605" y="129" key="#com.intellij.ide.util.MemberChooser/62.0.1474.864/1920.0.1920.1040@62.0.1474.864" timestamp="1575414292221" />
+    <state x="480" y="159" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1575223579340">
+      <screen x="62" y="0" width="1474" height="864" />
+    </state>
+    <state x="480" y="159" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/62.0.1474.864@62.0.1474.864" timestamp="1575223579340" />
+    <state x="2510" y="444" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1575565977007">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2510" y="444" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/62.0.1474.864/1920.0.1920.1040@1920.0.1920.1040" timestamp="1575565977007" />
+    <state x="2676" y="378" width="408" height="292" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1575585259374">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2676" y="378" width="408" height="292" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/62.0.1474.864/1920.0.1920.1040@1920.0.1920.1040" timestamp="1575585259374" />
+    <state x="2595" y="224" key="FileChooserDialogImpl" timestamp="1575547097098">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2595" y="224" key="FileChooserDialogImpl/62.0.1474.864/1920.0.1920.1040@1920.0.1920.1040" timestamp="1575547097098" />
+    <state x="580" y="186" key="FileChooserDialogImpl/62.0.1474.864/1920.0.1920.1040@62.0.1474.864" timestamp="1575412329448" />
+    <state x="580" y="186" key="FileChooserDialogImpl/62.0.1474.864@62.0.1474.864" timestamp="1575370977500" />
+    <state width="1088" height="165" key="GridCell.Tab.0.bottom" timestamp="1575588122898">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1088" height="165" key="GridCell.Tab.0.bottom/62.0.1474.864/1920.0.1920.1040@1920.0.1920.1040" timestamp="1575588122898" />
+    <state width="1342" height="105" key="GridCell.Tab.0.bottom/62.0.1474.864/1920.0.1920.1040@62.0.1474.864" timestamp="1575414957168" />
+    <state width="1089" height="139" key="GridCell.Tab.0.bottom/62.0.1474.864@62.0.1474.864" timestamp="1575461984234" />
+    <state width="1088" height="165" key="GridCell.Tab.0.center" timestamp="1575588122898">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1088" height="165" key="GridCell.Tab.0.center/62.0.1474.864/1920.0.1920.1040@1920.0.1920.1040" timestamp="1575588122898" />
+    <state width="1342" height="105" key="GridCell.Tab.0.center/62.0.1474.864/1920.0.1920.1040@62.0.1474.864" timestamp="1575414957168" />
+    <state width="1089" height="139" key="GridCell.Tab.0.center/62.0.1474.864@62.0.1474.864" timestamp="1575461984234" />
+    <state width="1088" height="165" key="GridCell.Tab.0.left" timestamp="1575588122898">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1088" height="165" key="GridCell.Tab.0.left/62.0.1474.864/1920.0.1920.1040@1920.0.1920.1040" timestamp="1575588122898" />
+    <state width="1342" height="105" key="GridCell.Tab.0.left/62.0.1474.864/1920.0.1920.1040@62.0.1474.864" timestamp="1575414957168" />
+    <state width="1089" height="139" key="GridCell.Tab.0.left/62.0.1474.864@62.0.1474.864" timestamp="1575461984234" />
+    <state width="1088" height="165" key="GridCell.Tab.0.right" timestamp="1575588122898">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1088" height="165" key="GridCell.Tab.0.right/62.0.1474.864/1920.0.1920.1040@1920.0.1920.1040" timestamp="1575588122898" />
+    <state width="1342" height="105" key="GridCell.Tab.0.right/62.0.1474.864/1920.0.1920.1040@62.0.1474.864" timestamp="1575414957168" />
+    <state width="1089" height="139" key="GridCell.Tab.0.right/62.0.1474.864@62.0.1474.864" timestamp="1575461984234" />
+    <state x="2204" y="7" key="SettingsEditor" timestamp="1575549019861">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2204" y="7" key="SettingsEditor/62.0.1474.864/1920.0.1920.1040@1920.0.1920.1040" timestamp="1575549019861" />
+    <state x="280" y="6" key="SettingsEditor/62.0.1474.864/1920.0.1920.1040@62.0.1474.864" timestamp="1575404715012" />
+    <state x="493" y="169" width="611" height="526" key="find.popup" timestamp="1575412333512">
+      <screen x="62" y="0" width="1474" height="864" />
+    </state>
+    <state x="493" y="169" width="611" height="526" key="find.popup/62.0.1474.864/1920.0.1920.1040@62.0.1474.864" timestamp="1575412333512" />
+    <state x="2433" y="237" width="876" height="815" key="run.anything.popup" timestamp="1575573181320">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2433" y="237" width="876" height="815" key="run.anything.popup/62.0.1474.864/1920.0.1920.1040@1920.0.1920.1040" timestamp="1575573181320" />
+    <state x="456" y="197" width="672" height="677" key="run.anything.popup/62.0.1474.864/1920.0.1920.1040@62.0.1474.864" timestamp="1575408778513" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/myOwnBranchOfMinecraft$Launcher__1_.ic" NAME="Launcher (1) Coverage Results" MODIFIED="1575223810905" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>integration.launcher.*</FILTER>
+    </SUITE>
+  </component>
+</project>
