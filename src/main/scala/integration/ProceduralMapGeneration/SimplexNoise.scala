@@ -42,10 +42,6 @@ object SimplexNoise {
 
   private def dot(g: SimplexNoise.Grad, x: Double, y: Double) = g.x * x + g.y * y
 
-  private def dot(g: SimplexNoise.Grad, x: Double, y: Double, z: Double) = g.x * x + g.y * y + g.z * z
-
-  private def dot(g: SimplexNoise.Grad, x: Double, y: Double, z: Double, w: Double) = g.x * x + g.y * y + g.z * z + g.w * w
-
   def noise(xin :Double,yin :Double) :Double = {
     var n0: Double = .0
     var n1: Double = .0

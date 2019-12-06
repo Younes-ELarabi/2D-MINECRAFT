@@ -2,7 +2,7 @@ package integration.states
 
 import java.awt.Graphics
 
-import integration.graphics.{Assets, ImageLoader}
+import integration.graphics.{Assets}
 import integration.launcher.Handler
 import integration.ui.{ClickListener, UIImageButton, UIManager}
 
@@ -20,14 +20,14 @@ class MenuState(handler: Handler) extends State(handler) {
   }))
 
   override def update(): Unit = {
-    uiManager.update
+    uiManager.update()
     handler.getMouseManager.setUIManager(uiManager)
     State.setState(handler.getGame.menuState)
     // State.setState(handler.getGame.gameState);
   }
 
   override def render(g: Graphics): Unit = {
-    g.drawImage(new ImageLoader().loadImage("./img/Other/background.jpg"),0,0,handler.getGame.getWidth,handler.getGame.getHeight,null)
+    g.drawImage(Assets.background,0,0,handler.getGame.getWidth,handler.getGame.getHeight,null)
     uiManager.render(g)
   }
 }

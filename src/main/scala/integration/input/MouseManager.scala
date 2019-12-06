@@ -27,7 +27,6 @@ class MouseManager extends MouseListener with MouseMotionListener {
   override def mouseClicked(e: MouseEvent): Unit = {
     mouseX = e.getX / 64
     mouseY = e.getY / 64
-    println(mouseX +" "+mouseY)
     if (uiManager != null) uiManager.onMouseMove(e)
   }
 
@@ -44,12 +43,7 @@ class MouseManager extends MouseListener with MouseMotionListener {
   }
 
   override def mouseEntered(e: MouseEvent): Unit = {
-    /*
-    mouseX = e.getX / 64
-    mouseY = e.getY / 64
-    println(mouseX +" "+mouseY)
-    if (uiManager != null) uiManager.onMouseMove(e)
-    */
+
   }
 
   override def mouseExited(e: MouseEvent): Unit = {
@@ -63,4 +57,5 @@ class MouseManager extends MouseListener with MouseMotionListener {
   override def mouseMoved(e: MouseEvent): Unit = {
 
   }
+  
 }

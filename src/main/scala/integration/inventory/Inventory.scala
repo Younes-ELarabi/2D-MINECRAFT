@@ -7,8 +7,11 @@ import java.awt.event.KeyEvent
 import integration.items.Item
 import java.util
 
+import integration.craft.CraftBag
 import integration.graphics.{Assets, Text}
 import integration.launcher.Handler
+import integration.states.State
+import integration.ui.{ClickListener, UIImageButton, UIManager}
 
 
 class Inventory{
@@ -18,7 +21,7 @@ class Inventory{
   private var inventoryItems :util.ArrayList[Item] = _
   private var invX :Int = 64
   private var invY :Int= 48
-  private var invWidth :Int= 512
+  private var invWidth :Int= 868 //512
   private var invHeight :Int= 384
   private var invListCenterX :Int= invX + 171
   private var invListCenterY :Int= invY + invHeight / 2 + 5
@@ -31,9 +34,31 @@ class Inventory{
   private var invCountY :Int= 172
   private var selectedItem :Int= 0
 
+  var uiManager :UIManager = _
+
+  private var craftTool :CraftBag = _
+
   def this(handler: Handler) {
     this()
     this.handler = handler
+    //
+    uiManager = new UIManager(handler)
+    handler.getMouseManager.setUIManager(uiManager)
+    uiManager.addObject(new UIImageButton(invImageX, invImageY, invImageWidth, invImageHeight, null, new ClickListener() {
+      def onClick(): Unit = {
+        println(Item.items(selectedItem).getName)
+        println("counter :"+craftTool.counter)
+        if(craftTool.counter == 0){
+          println("counter :"+craftTool.counter)
+          craftTool.setItem1(Item.items(selectedItem))
+        }else if(craftTool.counter == 1){
+          println("counter :"+craftTool.counter)
+          craftTool.setItem2(Item.items(selectedItem))
+        }
+      }
+    }))
+    //
+    this.craftTool = new CraftBag(handler)
     inventoryItems = new util.ArrayList[Item]
     //just for test
     inventoryItems.add(new Item(Assets.wood, "Wood", 0))
@@ -47,7 +72,10 @@ class Inventory{
     if (handler.getKeyManager.keyJustPressed(KeyEvent.VK_E)) {
       active = !active
     }
-    if (!active) return
+    if (!active) {
+      handler.getMouseManager.setUIManager(null)
+      return
+    }
     if (handler.getKeyManager.keyJustPressed(KeyEvent.VK_W)) {
       this.selectedItem -= 1;
     }
@@ -56,6 +84,13 @@ class Inventory{
     }
     if (selectedItem < 0) selectedItem = inventoryItems.size - 1
     else if (selectedItem >= inventoryItems.size) selectedItem = 0
+    uiManager.update
+    handler.getMouseManager.setUIManager(uiManager)
+    craftTool.craft
+    if(craftTool.getResult != null){
+      inventoryItems.add(craftTool.getResult)
+      craftTool.clearItems
+    }
   }
 
   def render(g: Graphics): Unit = {
@@ -78,12 +113,12 @@ class Inventory{
             invListCenterX, invListCenterY + i.asInstanceOf[Int] * invListSpacing, true, Color.WHITE, new Font("TimesRoman", Font.PLAIN, 18))
         }
       }
-
+      craftTool.render(g)
     }
     val item = inventoryItems.get(selectedItem)
     g.drawImage(item.getTexture, invImageX, invImageY, invImageWidth, invImageHeight, null)
     Text.drawString(g, Integer.toString(item.getCount), invCountX, invCountY, true, Color.WHITE, new Font("TimesRoman", Font.PLAIN, 18))
-    }
+  }
 
   def addItem(item: Item): Unit = {
     val size: Int = inventoryItems.size()
@@ -104,4 +139,7 @@ class Inventory{
   }
 
   def isActive: Boolean = active
+
+  def getSelectedItem :Int = this.selectedItem
+
 }

@@ -7,6 +7,8 @@ class Assets {}
 object Assets {
   private val width = 32
   private val height = 32
+  // background
+  var background :BufferedImage = _
   // Natural elements
   var dirt: BufferedImage = _
   var grass: BufferedImage = _
@@ -49,7 +51,8 @@ object Assets {
 
   def init(): Unit = {
     val sheet :SpriteSheet = new SpriteSheet(new ImageLoader().loadImage("./resources/textures/sheet.png"))
-    Assets.inventoryScreen = new ImageLoader().loadImage("./resources/textures/inventoryScreen.png")
+    Assets.background = new ImageLoader().loadImage("./img/Other/background.jpg")
+    Assets.inventoryScreen = new ImageLoader().loadImage("./resources/textures/inventoryScreen2.png")
     Assets.wood = sheet.crop(Assets.width, Assets.height, Assets.width, Assets.height)
     Assets.btn_start = new Array[BufferedImage](2)
     Assets.btn_start(0) = sheet.crop(Assets.width * 6, Assets.height * 4, Assets.width * 2, Assets.height)

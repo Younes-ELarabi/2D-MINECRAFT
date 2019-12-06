@@ -54,4 +54,3 @@ abstract class UIObject(var x: Float, var y: Float, var width: Int, var height: 
     this.hovering = hovering
   }
 }
-

@@ -1,7 +1,8 @@
 package integration.display
 
 import java.awt.{Canvas, Dimension}
-import javax.swing.JFrame
+
+import javax.swing.{JButton, JFrame, JPanel}
 
 class Display {
   private var frame :JFrame = _

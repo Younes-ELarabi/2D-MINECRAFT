@@ -6,7 +6,7 @@ import util.control.Breaks._
 import java.awt.{Graphics, Rectangle}
 import java.awt.image.BufferedImage
 
-import integration.craft.Craft
+import integration.craft.CraftBag
 import integration.cubes.Cube
 import integration.graphics.{Animation, Assets}
 import integration.inventory.Inventory
@@ -33,7 +33,7 @@ class Player(handler: Handler,x: Float,y: Float) extends Creature(handler, x, y,
   private var attackTimer = attackCooldown
   // Inventory
   private var inventory :Inventory = new Inventory(this.handler)
-  private var craftTool :Craft = new Craft(this.handler)
+
   //
   context = new MovementContext(this)
 
@@ -73,7 +73,6 @@ class Player(handler: Handler,x: Float,y: Float) extends Creature(handler, x, y,
 
   def postRender(g: Graphics): Unit = {
     inventory.render(g)
-    craftTool.render(g)
   }
 
 
